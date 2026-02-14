@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Christopher Elms - Grammy-Nominated Mix Engineer | London, UK</title>
+    <meta name="title" content="Christopher Elms - Grammy-Nominated Mix Engineer | London, UK">
+    <meta name="description" content="Two-time Grammy-nominated mix engineer based in London, UK. Specializing in mixing for Björk, Anohni, Alanis Morissette, Ben Howard, and more. Professional music mixing and Dolby Atmos services.">
+    <meta name="keywords" content="Christopher Elms, Chris Elms, mix engineer, music mixing, Dolby Atmos, Grammy nominated, London, UK, Björk, Anohni, Alanis Morissette, music production, film score mixing">
+    <meta name="author" content="Christopher Elms">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chriselms.com/">
+    <meta property="og:title" content="Christopher Elms - Grammy-Nominated Mix Engineer">
+    <meta property="og:description" content="Two-time Grammy-nominated mix engineer based in London, UK. Specializing in professional music mixing and Dolby Atmos for renowned artists.">
+    <meta property="og:image" content="https://www.chriselms.com/photo.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.chriselms.com/">
+    <meta property="twitter:title" content="Christopher Elms - Grammy-Nominated Mix Engineer">
+    <meta property="twitter:description" content="Two-time Grammy-nominated mix engineer based in London, UK. Specializing in professional music mixing and Dolby Atmos for renowned artists.">
+    <meta property="twitter:image" content="https://www.chriselms.com/photo.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.chriselms.com/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Christopher Elms",
+      "alternateName": "Chris Elms",
+      "jobTitle": "Mix Engineer",
+      "description": "Two-time Grammy-nominated mix engineer based in London, UK",
+      "url": "https://www.chriselms.com",
+      "image": "https://www.chriselms.com/photo.jpg",
+      "email": "chris@chriselms.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      },
+      "award": [
+        "Grammy Nomination",
+        "Grammy Nomination"
+      ],
+      "knowsAbout": [
+        "Music Mixing",
+        "Audio Engineering",
+        "Dolby Atmos",
+        "Music Production",
+        "Film Score Mixing",
+        "Game Audio"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Music Industry Professional"
+      },
+      "colleague": [
+        {
+          "@type": "Person",
+          "name": "Björk"
+        },
+        {
+          "@type": "Person",
+          "name": "Anohni"
+        },
+        {
+          "@type": "Person",
+          "name": "Alanis Morissette"
+        },
+        {
+          "@type": "Person",
+          "name": "Ben Howard"
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --bg: #fafaf8;
+            --text: #1a1a1a;
+            --text-light: #666;
+            --accent: #2a2a2a;
+            --border: #e0e0dc;
+            --hover: #f5f5f2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+
+
+        /* Hero */
+        .hero {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .hero .name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 300;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+
+        .hero .title {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .hero .subtitle {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            margin-top: 0.5rem;
+        }
+
+        /* Grid */
+        .grid-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 2rem 6rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 6rem;
+        }
+
+        .project-card {
+            cursor: pointer;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .album-cover {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #e0e0dc 0%, #d0d0cc 100%);
+            border-radius: 2px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: box-shadow 0.4s ease;
+        }
+
+        .project-card:hover .album-cover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .album-cover img.loaded {
+            opacity: 1;
+        }
+
+        .album-cover::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, transparent 0%, rgba(0,0,0,0.03) 100%);
+            pointer-events: none;
+        }
+
+        .project-info {
+            margin-top: 1rem;
+        }
+
+        .artist-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.01em;
+        }
+
+        .project-title {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+
+        .project-role {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 300;
+            letter-spacing: 0.03em;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 4px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.show .modal-content {
+            transform: translateY(0);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .close-modal:hover {
+            background: var(--hover);
+            color: var(--text);
+        }
+
+        .modal-player {
+            padding: 2rem;
+        }
+
+        .modal-player iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        /* About Section */
+        .about-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem 3rem;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .about-photo {
+            width: 300px;
+            height: 200px;
+            border-radius: 2px;
+            background: var(--border);
+            overflow: hidden;
+        }
+
+        .about-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .about-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .about-content .highlight {
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .contact-inline {
+            margin-top: 2rem;
+        }
+
+        .contact-inline .contact-link {
+            display: inline-block;
+            font-size: 1.1rem;
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.875rem 2rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.02em;
+        }
+
+        .contact-inline .contact-link:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .about-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-photo {
+                width: 225px;
+                height: 150px;
+                margin: 0 auto;
+            }
+
+            .modal-content {
+                margin: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1 class="name">Christopher Elms</h1>
+        <p class="title">Mix Engineer</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-photo">
+            <img src="photo.jpg" alt="Christopher Elms">
+        </div>
+        <div class="about-content">
+            <h2>About</h2>
+            <p>I'm a two-time Grammy-nominated mix engineer based in London, UK, with decades of experience working alongside renowned artists and bands.</p>
+            <p>From pop anthems to film scores, I specialize in crafting polished, professional mixes that connect the listener to your music. <span class="highlight">Listening to a piece of music should transport you into the world of that song — that's what I strive for with every mix.</span></p>
+            <p>My work has been featured in Sound on Sound, highlighting collaborations with Björk on "Vulnicura" and with Guy Sigsworth on Alanis Morissette's "Havoc and Bright Lights".</p>
+            <div class="contact-inline">
+                <a href="/cdn-cgi/l/email-protection#402328322933002328322933252c2d336e232f2d" class="contact-link">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="grid-container">
+        <div id="projects" class="projects-grid"></div>
+        <div id="loading" class="loading">Loading discography...</div>
+    </section>
+
+    <!-- Modal for Apple Music Player -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <div class="modal-player">
+                <iframe id="apple-music-player" allow="autoplay *; encrypted-media *; fullscreen *" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // ============================================
+        // DISCOGRAPHY - EASY TO EDIT!
+        // ============================================
+        // To change the order: Just drag and reorder these objects
+        // To add custom artwork: Add a "coverUrl" field with your image URL
+        // To link directly to a song: Add an "appleMusicUrl" field with the embed URL
+        // 
+        // Example with custom cover:
+        //   { artist: "Artist Name", title: "Album", year: 2024, role: "Mixing", 
+        //     coverUrl: "my-album-cover.jpg", search: "Artist Album" }
+        //
+        // Example with direct Apple Music link:
+        //   { artist: "Artist Name", title: "Song Name", year: 2024, role: "Mixing",
+        //     appleMusicUrl: "https://embed.music.apple.com/us/album/song-name/123456789?i=987654321" }
+        //
+        // To get an Apple Music embed URL:
+        // 1. Find the song on music.apple.com
+        // 2. Click share → Copy Embed Code
+        // 3. Copy the URL from the iframe src
+        // ============================================
+        
+        const projects = [
+            { artist: "Anohni", title: "My Back Was A Bridge for You To Cross", year: 2023, role: "Atmos Mixing", search: "Anohni My Back Was A Bridge" },
+            { artist: "Björk", title: "Vulnicura", year: 2015, role: "Mixed Track 1 and Engineering all tracks", coverUrl: "vulnicura.jpg", appleMusicUrl: "https://embed.music.apple.com/gb/album/stonemilker/1726641911?i=1726641914" },
+            { artist: "Alanis Morissette", title: "Havoc And Bright Lights", year: 2012, role: "Engineering", search: "Alanis Morissette Havoc" },
+            { artist: "Ben Howard", title: "Noonday Dream", year: 2018, role: "Mixing", coverUrl: "noonday.jpg", appleMusicUrl: "https://embed.music.apple.com/gb/album/noonday-dream/1364401352" },
+            { artist: "Matt Cardle", title: "Time To Be Alive", year: 2018, role: "Mixing", coverUrl: "cardle.jpg", appleMusicUrl: "https://embed.music.apple.com/gb/album/time-to-be-alive/1353377152" },
+            { artist: "Björk", title: "Utopia", year: 2025, role: "Engineering", search: "Björk Utopia", coverUrl: "utopia.jpg", }, 
+            { artist: "Smerz", title: "Believer", year: 2021, role: "Mixing", search: "Smerz Believer" },
+            { artist: "Martin Jasper", title: "Papercut EP", year: 2023, role: "Mixed and Executive Produced", search: "Martin Jasper Papercut" },
+            { artist: "Eden xo", title: "The Question EP", year: 2019, role: "Mixed So Lucky and Have It All", coverUrl: "edenquestion.jpg", appleMusicUrl: "https://embed.music.apple.com/gb/album/so-lucky/1462080810?i=1462080833" },
+            { artist: "Glasser", title: "Crux", year: 2023, role: "Stereo and Atmos Mixing", search: "Glasser Crux" },
+            { artist: "Jenny Hval", title: "The Practice of Love", year: 2019, role: "Mixing", search: "Jenny Hval Practice of Love" },
+            { artist: "A Blaze of Feather", title: "Labyrinth", year: 2020, role: "Mixing", search: "Blaze of Feather Labyrinth" },  
+            { artist: "Jenny Hval", title: "Iris Silver Mist", year: 2025, role: "Atmos Mixing", search: "Jenny Hval Iris Silver Mist" },
+            { artist: "Alison Moyet", title: "The Minutes", year: 2013, role: "Mixing", search: "Alison Moyet The Minutes" },
+  { artist: "Zackarius Andersson", title: "Bortglömda saker EP", year: 2022, role: "Mixed", coverUrl: "zach.jpg", appleMusicUrl: "https://embed.music.apple.com/gb/album/bortgl%C3%B6mda-saker-ep/1647187790" },
+            { artist: "Oliver Coates", title: "Aftersun (Original Motion Picture Soundtrack)", year: 2023, role: "Surround Mixing", search: "Oliver Coates Aftersun" },
+            { artist: "Alison Moyet", title: "Key", year: 2017, role: "Mixing", search: "Alison Moyet Key" },
+            { artist: "Solomon", title: "It's All Downhill From Here", year: 2023, role: "Production and Mix", search: "Solomon Downhill" },
+            { artist: "Oliver Coates", title: "Pillion (Original Soundtrack)", year: 2025, role: "Surround Mixing", search: "Oliver Coates Pillion" },
+            { artist: "Esperanza Spalding", title: "Emily's D+Evolution", year: 2016, role: "Mixing (Unconditional Love)", appleMusicUrl: "https://embed.music.apple.com/gb/album/unconditional-love-alternate-version/1440943249?i=1440944048" },
+            { artist: "Matt Cardle", title: "Purple Crayon", year: 2021, role: "Mixing", search: "Matt Cardle Purple Crayon" },
+            { artist: "Kate Havnevik", title: "Starlight Fires", year: 2021, role: "Mixing", search: "Kate Havnevik Starlight Fires" },
+            { artist: "Two Feathers", title: "Aragami (Original Soundtrack)", year: 2016, role: "Mixing", search: "Two Feathers Aragami" },
+            { artist: "Cass Lowe", title: "Birthmark", year: 2014, role: "Mixing", search: "Cass Lowe Birthmark" },
+            { artist: "Richard Walters", title: "Regret Less", year: 2012, role: "Mixing Blossom", search: "Richard Walters Blossom", appleMusicUrl: "https://embed.music.apple.com/gb/album/blossom/1631957646?i=1631957649" },
+            { artist: "Anohni", title: "Paradise EP", year: 2017, role: "Mixing", search: "Anohni Paradise" },
+            { artist: "A Blaze of Feather", title: "Strange Beautiful EP", year: 2021, role: "Mixing", search: "Blaze of Feather Strange Beautiful" },
+            { artist: "SingerSen", title: "The World in my Eyes", year: 2010, role: "Mixing", search: "SingerSen World Eyes" },
+            { artist: "Samuel Gajicki", title: "Miracle", year: 2024, role: "Mixing", search: "Samuel Gajicki Miracle" },
+            { artist: "Samuel Gajicki", title: "Easier", year: 2022, role: "Mixing", search: "Samuel Gajicki Easier" },
+            { artist: "OWMI", title: "Where You Wanna Be (Session)", year: 2020, role: "Mixing", search: "OWMI Where You Wanna Be" },
+            { artist: "Sarah Darling", title: "Wonderland", year: 2019, role: "Mixed Blue Sky, Call Me, A Boy Like You and Shine", search: "Sarah Darling Wonderland", appleMusicUrl: "https://embed.music.apple.com/gb/album/shine/1454214755?i=1454214991" },
+            { artist: "Magnus Carlsson", title: "Wonderland", year: 2019, role: "Mixed Deep Trouble, Holding You Now, Everything About You, Out Of My Mind", coverUrl: "magnus.jpg", search: "Magnus Carlsson Wonderland", appleMusicUrl: "https://embed.music.apple.com/gb/album/out-of-my-mind/1661970455?i=1661971880" },
+            { artist: "Björk", title: "Vulnicura Strings", year: 2015, role: "Mixing", search: "Bjork Vulnicura Strings", appleMusicUrl: "https://embed.music.apple.com/gb/album/vulnicura-strings-the-acoustic-version-strings-voice/1726634970" },
+            { artist: "Two Feathers ", title: "Warhammer: Vermintide 2 - Versus (Original Soundtrack)", year: 2025, role: "Mixing", search: "Two Feathers Warhammer: Vermintide 2" },
+            { artist: "Two Feathers", title: "Aragami 2 (Original Soundtrack)", year: 2021, role: "Mixing", search: "Two Feathers Aragami 2" },
+            { artist: "Oliver Coates", title: "Mary & George (Original Series Soundtrack)", year: 2025, role: "Surround Mixing", coverUrl: "marygeorge.jpg", search: "Oliver Coates Mary and George" },          
+            
+        ];
+       
+        // Function to search for album on MusicBrainz and get cover art
+        async function getAlbumCover(artist, title, searchQuery) {
+            try {
+                // Try MusicBrainz API
+                const mbResponse = await fetch(
+                    `https://musicbrainz.org/ws/2/release/?query=artist:${encodeURIComponent(artist)}%20AND%20release:${encodeURIComponent(title)}&fmt=json&limit=1`
+                );
+                const mbData = await mbResponse.json();
+                
+                if (mbData.releases && mbData.releases.length > 0) {
+                    const releaseId = mbData.releases[0].id;
+                    const coverUrl = `https://coverartarchive.org/release/${releaseId}/front-250`;
+                    
+                    // Check if cover exists
+                    const coverCheck = await fetch(coverUrl, { method: 'HEAD' });
+                    if (coverCheck.ok) {
+                        return coverUrl;
+                    }
+                }
+            } catch (error) {
+                console.log('MusicBrainz fetch failed:', error);
+            }
+
+            // Fallback to placeholder
+            return null;
+        }
+
+        // Function to get Apple Music embed URL
+        async function getAppleMusicEmbed(artist, title) {
+            try {
+                // Search iTunes API
+                const searchQuery = `${artist} ${title}`.replace(/[^a-zA-Z0-9\s]/g, '');
+                const response = await fetch(
+                    `https://itunes.apple.com/search?term=${encodeURIComponent(searchQuery)}&entity=album&limit=1`
+                );
+                const data = await response.json();
+                
+                if (data.results && data.results.length > 0) {
+                    const collectionId = data.results[0].collectionId;
+                    return {
+                        embedUrl: `https://embed.music.apple.com/us/album/${collectionId}`,
+                        coverUrl: data.results[0].artworkUrl100.replace('100x100', '600x600')
+                    };
+                }
+            } catch (error) {
+                console.log('Apple Music search failed:', error);
+            }
+            return null;
+        }
+
+        // Render projects
+        async function renderProjects() {
+            const container = document.getElementById('projects');
+            const loading = document.getElementById('loading');
+            
+            // Show projects container
+            container.style.opacity = '0';
+            
+            for (const project of projects) {
+                const card = document.createElement('div');
+                card.className = 'project-card';
+                
+                card.innerHTML = `
+                    <div class="album-cover">
+                        <img alt="${project.artist} - ${project.title}">
+                    </div>
+                    <div class="project-info">
+                        <div class="artist-name">${project.artist}</div>
+                        <div class="project-title">${project.title}</div>
+                        <div class="project-role">${project.role}</div>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+                
+                // Load album data
+                (async () => {
+                    const img = card.querySelector('img');
+                    
+                    // If direct Apple Music URL is provided, use it
+                    if (project.appleMusicUrl) {
+                        // Use custom cover if provided, otherwise try to fetch
+                        if (project.coverUrl) {
+                            img.src = project.coverUrl;
+                            img.onload = () => img.classList.add('loaded');
+                        } else {
+                            const appleData = await getAppleMusicEmbed(project.artist, project.title);
+                            if (appleData && appleData.coverUrl) {
+                                img.src = appleData.coverUrl;
+                                img.onload = () => img.classList.add('loaded');
+                            }
+                        }
+                        // Set up click handler with direct URL
+                        card.style.cursor = 'pointer';
+                        card.onclick = () => openModal(project.appleMusicUrl);
+                        return;
+                    }
+                    
+                    // If custom cover URL is provided, use it
+                    if (project.coverUrl) {
+                        img.src = project.coverUrl;
+                        img.onload = () => img.classList.add('loaded');
+                        
+                        // Still get Apple Music data for embed
+                        const appleData = await getAppleMusicEmbed(project.artist, project.title);
+                        if (appleData && appleData.embedUrl) {
+                            card.style.cursor = 'pointer';
+                            card.onclick = () => openModal(appleData.embedUrl);
+                        }
+                        return;
+                    }
+                    
+                    // Otherwise, auto-fetch from Apple Music
+                    const appleData = await getAppleMusicEmbed(project.artist, project.title);
+                    
+                    if (appleData && appleData.coverUrl) {
+                        img.src = appleData.coverUrl;
+                        img.onload = () => img.classList.add('loaded');
+                    } else {
+                        // Try MusicBrainz
+                        const coverUrl = await getAlbumCover(project.artist, project.title, project.search);
+                        if (coverUrl) {
+                            img.src = coverUrl;
+                            img.onload = () => img.classList.add('loaded');
+                        }
+                    }
+                    
+                    // Add click handler
+                    if (appleData && appleData.embedUrl) {
+                        card.style.cursor = 'pointer';
+                        card.onclick = () => openModal(appleData.embedUrl);
+                    }
+                })();
+            }
+            
+            // Fade in projects
+            setTimeout(() => {
+                loading.style.display = 'none';
+                container.style.transition = 'opacity 0.6s ease';
+                container.style.opacity = '1';
+            }, 500);
+        }
+
+        // Modal functions
+        function openModal(embedUrl) {
+            const modal = document.getElementById('modal');
+            const player = document.getElementById('apple-music-player');
+            
+            player.src = embedUrl;
+            modal.classList.add('active');
+            
+            // Trigger animation
+            setTimeout(() => modal.classList.add('show'), 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            const player = document.getElementById('apple-music-player');
+            
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.classList.remove('active');
+                player.src = '';
+            }, 300);
+        }
+
+        // Close modal on background click
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') {
+                closeModal();
+            }
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Initialize
+        renderProjects();
+    </script>
+</body>
+</html>
