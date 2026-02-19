@@ -229,6 +229,31 @@
             color: var(--text-light);
             font-weight: 300;
             letter-spacing: 0.03em;
+            position: relative;
+        }
+
+        .discogs-link {
+            display: inline-block;
+            margin-left: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 0.8rem;
+        }
+
+        .project-role:hover .discogs-link {
+            opacity: 1;
+        }
+
+        .discogs-link a {
+            color: var(--text-light);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .discogs-link a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
         }
 
         /* Modal */
@@ -457,6 +482,7 @@
         // To change the order: Just drag and reorder these objects
         // To add custom artwork: Add a "coverUrl" field with your image URL
         // To link directly to a song: Add an "appleMusicUrl" field with the embed URL
+        // To add a Discogs link: Add a "discogsUrl" field with the Discogs page URL
         // 
         // Example with custom cover:
         //   { artist: "Artist Name", title: "Album", year: 2024, role: "Mixing", 
@@ -465,6 +491,10 @@
         // Example with direct Apple Music link:
         //   { artist: "Artist Name", title: "Song Name", year: 2024, role: "Mixing",
         //     appleMusicUrl: "https://embed.music.apple.com/us/album/song-name/123456789?i=987654321" }
+        //
+        // Example with Discogs link (appears on hover):
+        //   { artist: "Artist Name", title: "Album", year: 2024, role: "Mixing",
+        //     discogsUrl: "https://www.discogs.com/release/12345-artist-album" }
         //
         // To get an Apple Music embed URL:
         // 1. Find the song on music.apple.com
@@ -575,6 +605,11 @@
                 const card = document.createElement('div');
                 card.className = 'project-card';
                 
+                // Build Discogs link if URL is provided
+                const discogsLink = project.discogsUrl 
+                    ? `<span class="discogs-link">- <a href="${project.discogsUrl}" target="_blank" rel="noopener noreferrer">discogs</a></span>`
+                    : '';
+                
                 card.innerHTML = `
                     <div class="album-cover">
                         <img alt="${project.artist} - ${project.title}">
@@ -582,7 +617,7 @@
                     <div class="project-info">
                         <div class="artist-name">${project.artist}</div>
                         <div class="project-title">${project.title}</div>
-                        <div class="project-role">${project.role}</div>
+                        <div class="project-role">${project.role}${discogsLink}</div>
                     </div>
                 `;
                 
